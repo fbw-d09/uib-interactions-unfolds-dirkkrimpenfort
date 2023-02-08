@@ -1,0 +1,94 @@
+*
+{
+    box-sizing: border-box;
+    
+
+}
+
+main
+{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+
+.blackline
+{
+    width: 80%;
+    height: 5px;
+    background-color: black;
+    margin: 0 auto ;
+    
+}
+
+.message p
+{
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 300px;
+    
+}
+
+.boxsteelblue
+{
+    background: steelblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 550px;
+    transform-origin: top left;
+    transition: 0.5s;
+}
+
+
+.boxdimgray
+{
+    background: dimgray;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 750px;
+    transform-origin: top right;
+    transition: 0.5s;
+}
+
+.boxyellow
+{
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 360px;
+    left: 550px;
+    transform-origin: bottom left;
+    transition: 0.5s;
+}
+
+.boxrosybrown
+{
+    background: rosybrown;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 360px;
+    left: 750px;
+    transform-origin: bottom right;
+    transition: 0.5s; 
+}
+
+main:hover .boxsteelblue,
+main:hover .boxrosybrown
+{
+    transform: rotate(90deg);
+}
+
+main:hover .boxdimgray,
+main:hover .boxyellow
+{
+    transform: rotate(-90deg);
+}
+
